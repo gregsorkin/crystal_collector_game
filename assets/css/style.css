@@ -1,0 +1,144 @@
+body {
+    line-height: 1.5;
+    font-size: 16px;
+    letter-spacing: .16px;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url("../images/pool_table.png");
+}
+
+.gameBox {
+    padding: 20px;
+    margin: 20px;
+    border-width: .5rem;
+    border-style: double;
+    border-color: navy;
+    background: rgba(135, 206, 235, 0.5);
+}
+
+.titleBox {
+    background: saddlebrown;
+    color: white;
+    padding: 18px 12px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    text-align: center;
+    vertical-align: center;    
+    border-width: 1.5px;
+    border-style: solid;
+    border-color: whitesmoke;
+    /* max-width: 500px; */
+}
+    
+.instructions {
+    background: burlywood;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-width: 1.5px;
+    border-style: solid;
+    border-color: whitesmoke; 
+}
+
+.rules {
+    color: green;
+    font-weight: bolder;
+}
+
+.randomNumber {
+    padding: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: -50px;
+    background: darkcyan;
+    text-align: center;
+    vertical-align: center;
+    max-width: 150px;
+    color: white;
+    border-width: 1.5px;
+    border-style: solid;
+    border-color: whitesmoke;
+}
+
+.randomNum {
+    color: white;
+    font-size: 24px;
+}
+
+.winsLosses {
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: -20px;
+    background: aqua;
+    color: black;
+    max-width: 150px;
+    border-width: 1.5px;
+    border-style: solid;
+    border-color: whitesmoke;
+}
+
+#crystals {
+    clear: both;
+    padding: 0px;
+    margin-bottom: 20px;
+}
+
+#crystalOne, #crystalTwo, #crystalThree, #crystalFour {
+    width: 125px;
+    height: 125px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+}
+
+#crystalOne:hover, #crystalTwo:hover, #crystalThree:hover, #crystalFour:hover {
+    border-width: 3px;
+    border-style: solid;
+    border-color: goldenrod;
+}   
+.totalScore {
+    padding: 1.5px;
+    background: lightseagreen;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    vertical-align: center;
+    max-width: 200px;
+    padding-top: 15px;
+    border-width: 1.5px;
+    border-style: solid;
+    border-color: whitesmoke;
+}
+
+.runningCount {
+    padding 30px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+}
+
+.runningTotal {
+    padding: 30px;
+    background: lightseagreen;
+    text-align: center;
+    vertical-align: center;
+    margin-bottom: 30px;
+    border-width: 1.5px;
+    border-style: solid;
+    border-color: whitesmoke;
+    max-width: 200px;
+}
+
+.total {
+    color: yellow;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.footer {
+    background: slategrey;
+    color: white;
+    text-align: center;
+    vertical-align: center;
+    padding: 20px;
+    border-top: .5rem solid teal;
+}
+

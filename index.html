@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="eng-us" charset="UTF-8">
+
+        <title>Crystal Collector Game | Greg Sorkin</title>
+
+        <!-- Reset browser default styles -->
+        <link rel="stylesheet" type="text/css" href="assets/css/normalize.css"> 
+        <!-- Bootstrap Styles -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <!-- My style sheet -->
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    </head>
+
+    <body>
+        <div class="container-fluid gameBox col-xs-4 col-md-6 col-lg-12">
+            <div class="row">
+                <div class="col-xs-4 col-md-6 col-lg-8">
+                    <!-- Title box -->
+                    <div class="titleBox">
+                        <h3>Crystal Collector Game</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-4 col-md-6 col-lg-8">
+                    <!-- Instructions box -->
+                    <div class="instructions">
+                        <p class="rules">You will be given a target score at the start of the game.</p>
+                        <p class="rules">There are four crystals below. By clicking a crystal, you will add a specific amount of points to your total score.</p>
+                        <p class="rules">You win the game by matching your total score to the target score. You lose the game if your total score goes above the target score.</p>
+                        <p class="rules">The value of each crystal is hidden from you until you click on it.</p>
+                        <p class="rules">Each time you restart the game, the value of the crystals will change.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row no-gutters">
+                <div class="col-xs-8 col-md-4 col-lg-8">
+                    <!-- Random Number box -->
+                    <div class=randomNumber>
+                        <p>Target score:</p>
+                        <p class="randomNum"></p>
+                    </div>
+                </div>
+
+                <div class="col-xs-4 col-md-4 col-lg-4">
+                    <!-- Win/Loss box -->
+                    <div class="winsLosses">
+                        <p id="youWinYouLose"></p>
+                        <p>Wins: <span id="winsText"></span></p>
+                        <p>Losses: <span id="lossText"></span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row crystals">
+                    <!-- Crystal images box -->
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 img-responsive">
+                        <img src="assets/images/crystal-1.jpg" id="crystalOne" class="img-responsive" alt="Round Gem">
+                    </div>    
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <img src="assets/images/crystal-2.jpg" id="crystalTwo" class="img-responsive" alt="Heart Geode">
+                    </div>    
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <img src="assets/images/crystal-3.jpg" id="crystalThree" class="img-responsive" alt="Heart Stone">
+                    </div>    
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <img src="assets/images/crystal-4.jpg" id="crystalFour" class="img-responsive" alt="Diamond">
+                    </div>    
+            </div>
+
+            <div class="row">
+                <div class="col-xs-4 col-md-6 col-lg-8 ">
+                    <!-- Total Score box -->
+                    <div class="totalScore">
+                        <p>Your total score is:</p>
+                    </div>
+
+                    <!-- Cumulative Score box -->
+                    <div class="runningTotal">
+                        <p class="total"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+                &copy; 2019 | Greg Sorkin
+        </div>
+
+        <!-- jQuery API -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- JavaScript File-->
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
+    </body>
+</html>
