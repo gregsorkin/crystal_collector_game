@@ -40,7 +40,7 @@ body {
 }
 
 .rules {
-    color: green;
+    color: forestgreen;
     font-weight: bolder;
 }
 
@@ -48,7 +48,7 @@ body {
     padding: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-right: -50px;
+    margin-right: -25px;
     background: darkcyan;
     text-align: center;
     vertical-align: center;
@@ -75,6 +75,22 @@ body {
     border-width: 1.5px;
     border-style: solid;
     border-color: whitesmoke;
+}
+
+#youWinYouLose {
+    color: goldenrod;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#winsText {
+    color: rgb(4, 68, 4);
+    font-weight: bolder;
+}
+
+#lossText {
+    color: crimson;
+    font-weight: bolder;
 }
 
 #crystals {

@@ -26,8 +26,9 @@ $(".randomNum").text(randomGoal);
 function resetGame() {
     randomGoal = Math.floor(Math.random() * (+ targetMax - +targetMin)) + targetMin;
     $(".randomNum").text(randomGoal);
-    $("#winText").text("");
-    $("#lossText").text("");
+    // $("#youWinYouLose").text("");
+    // $("#winText").text("");
+    // $("#lossText").text("");
     $(".total").text("");
     crystalOne = Math.floor(Math.random() * (+ crystalMax - +crystalMin)) + crystalMin;
     crystalTwo = Math.floor(Math.random() * (+ crystalMax - +crystalMin)) + crystalMin;
@@ -44,11 +45,13 @@ $("#crystalOne").click(function() {
     // Conditions
     if (runningTotal === randomGoal) {
         wins++;
-        $("#winText").text("You win!");
+        $("#youWinYouLose").text("You win!");
+        $("#winsText").text(wins);
         resetGame();
     } else if (runningTotal >= randomGoal) {
         losses++;
-        $("#lossText").text("You lose :(");
+        $("#youWinYouLose").text("You lose :(");
+        $("#lossText").text(losses);
         resetGame();
     }
 });
@@ -60,11 +63,13 @@ $("#crystalTwo").click(function() {
     // Conditions
     if (runningTotal === randomGoal) {
         wins++;
-        $("#winText").text("You win!");
+        $("#youWinYouLose").text("You win!");
+        $("#winsText").text(wins);
         resetGame();
     } else if (runningTotal >= randomGoal) {
         losses++;
-        $("#lossText").text("You lose :(");
+        $("#youWinYouLose").text("You lose :(");
+        $("#lossText").text(losses);
         resetGame();
     }
 });
@@ -76,11 +81,13 @@ $("#crystalThree").click(function() {
     // Conditions
     if (runningTotal === randomGoal) {
         wins++;
-        $("#winText").text("You win!");
+        $("#youWinYouLose").text("You win!");
+        $("#winsText").text(wins);
         resetGame();
     } else if (runningTotal >= randomGoal) {
         losses++;
-        $("#lossText").text("You lose :(");
+        $("#youWinYouLose").text("You lose :(");
+        $("#lossText").text(losses);
         resetGame();
     }
 });
@@ -92,11 +99,13 @@ $("#crystalFour").click(function() {
     // Conditions
     if (runningTotal === randomGoal) {
         wins++;
-        $("#winText").text("You win!");
+        $("#youWinYouLose").text("You win!");
+        $("#winsText").text(wins);
         resetGame();
     } else if (runningTotal >= randomGoal) {
         losses++;
-        $("#lossText").text("You lose :(");
+        $("#youWinYouLose").text("You lose :(");
+        $("#lossText").text(losses);
         resetGame();
     }
 });
