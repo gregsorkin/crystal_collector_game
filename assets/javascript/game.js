@@ -26,15 +26,18 @@ $(".randomNum").text(randomGoal);
 function resetGame() {
     randomGoal = Math.floor(Math.random() * (+ targetMax - +targetMin)) + targetMin;
     $(".randomNum").text(randomGoal);
-    // $("#youWinYouLose").text("");
-    // $("#winText").text("");
-    // $("#lossText").text("");
+    setTimeout(youWinYouLose, 2500)
     $(".total").text("");
     crystalOne = Math.floor(Math.random() * (+ crystalMax - +crystalMin)) + crystalMin;
     crystalTwo = Math.floor(Math.random() * (+ crystalMax - +crystalMin)) + crystalMin;
     crystalThree = Math.floor(Math.random() * (+ crystalMax - +crystalMin)) + crystalMin;
     crystalFour = Math.floor(Math.random() * (+ crystalMax - +crystalMin)) + crystalMin;
     runningTotal = 0;
+}
+
+/* Gets the "You win!" or "You Lose :(" message disappear after 2.5 seconds */
+function youWinYouLose() {
+    $("#youWinYouLose").text("");
 }
 
 /* Clicking the crystals */
